@@ -15,7 +15,6 @@ refs.btnStop.addEventListener('click', onBtnStopChangeColor);
 function onBtnStartChangeColor() {
     refs.btnStart.disabled = true;
     refs.btnStop.disabled = false;
-
     idInt = setInterval(() => {
         refs.body.style.backgroundColor = getRandomHexColor()
     }, CHANGE_COLOR_DELAY);
@@ -24,7 +23,6 @@ function onBtnStartChangeColor() {
 function onBtnStopChangeColor() {
     refs.btnStart.disabled = false;
     refs.btnStop.disabled = true;
-
     clearInterval(idInt);
 }
 
